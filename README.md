@@ -62,8 +62,11 @@ The primary objectives of this project are:
 architecture-diagram.png
 ```
 
-```markdown
-![Architecture](architecture-diagram.png)
+## Architecture Diagram
+
+![Architecture](screenshots/architecture-diagram.png)
+
+The following architecture was provisioned entirely using Terraform.
 ```
 
 </p>
@@ -499,33 +502,36 @@ The following screenshots demonstrate the successful execution of the Terraform 
 
 ## Terraform Commands
 
-### Terraform Initialization
+### Terraform Plan
 
-![Terraform Init](screenshots/01-terraform-init.png)
+Terraform validates the current infrastructure state and generates an execution plan before deployment.
 
----
-
-### Terraform Validation
-
-![Terraform Validate](screenshots/02-terraform-validate.png)
-
----
-
-### Terraform Execution Plan
-
-![Terraform Plan](screenshots/03-terraform-plan.png)
-
+![Terraform Plan](screenshots/01-terraform-plan.png)
 ---
 
 ### Terraform Apply
 
-![Terraform Apply](screenshots/04-terraform-apply.png)
+Terraform provisions the AWS infrastructure and displays the generated outputs.
 
+![Terraform Apply](screenshots/02-terraform-apply.png)
 ---
 
-## AWS Resources
+### Terraform Output
 
-### Virtual Private Cloud (VPC)
+Terraform outputs provide important resource identifiers such as EC2 Public IP, Instance ID, VPC ID and Subnet ID.
+
+![Terraform Output](screenshots/03-terraform-output.png)
+---
+
+### Terraform State
+
+Terraform keeps track of all managed resources inside its state file.
+
+![Terraform State](screenshots/04-terraform-state.png)
+
+### VPC
+
+Custom Virtual Private Cloud created using Terraform.
 
 ![VPC](screenshots/05-vpc.png)
 
@@ -555,9 +561,11 @@ The following screenshots demonstrate the successful execution of the Terraform 
 
 ---
 
-### Amazon EC2 Instance
+### EC2 Instance
 
-![EC2 Instance](screenshots/10-ec2-instance.png)
+Amazon Linux EC2 instance launched inside the public subnet.
+
+![EC2](screenshots/10-ec2-instance.png)
 
 ---
 
