@@ -54,13 +54,6 @@ The primary objectives of this project are:
 
 <p align="center">
 
-## 📷 Architecture Diagram
-
-> Replace the image below with your architecture diagram.
-
-```text
-architecture-diagram.png
-```
 
 ## Architecture Diagram
 
@@ -73,9 +66,8 @@ The following architecture was provisioned entirely using Terraform.
 
 ---
 
-# 🌐 Infrastructure Architecture
+     # 🌐 Infrastructure Architecture
 
-```
                     Internet
                         │
                         │
@@ -539,7 +531,9 @@ Custom Virtual Private Cloud created using Terraform.
 
 ### Public Subnet
 
-![Subnet](screenshots/06-subnet.png)
+Public subnet associated with the custom VPC.
+
+![Subnet](screenshots/06-public-subnet.png)
 
 ---
 
